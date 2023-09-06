@@ -15,7 +15,7 @@ def is_iss_above():
     # data = iss_feed.json()["iss_position"]
     iss_lng = iss_feed.json()["iss_position"]["longitude"]
     iss_lat = iss_feed.json()["iss_position"]["latitude"]
-    if (MY_LAT-5) <= iss_lat <= (MY_LAT+5) and (MY_LAT - 5) <= iss_lng <= (MY_LAT + 5):
+    if (MY_LAT-5) <= iss_lat <= (MY_LAT+5) and (MY_LNG - 5) <= iss_lng <= (MY_LNG + 5):
         # print("true")
         return True
 
